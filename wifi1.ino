@@ -11,10 +11,10 @@ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 // uint8_t r=0,g=0,b=0;
 // uint8_t pattern[LED_COUNT][3];
 
-const char* ssid = "rewrite-c";
-const char* password = "welcome.rewrite";
+const char* ssid = "...";
+const char* password = "...";
 
-WebServer server(80); // ポート80でWebサーバー起動
+WebServer server(80); 
 
 void handleLED(){
   int x = server.arg("cursorX").toInt();
@@ -110,7 +110,7 @@ void setup() {
 }
 
 void loop() {
-  server.handleClient(); // クライアントのリクエストを処理
+  server.handleClient(); 
 
   
 }
